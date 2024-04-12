@@ -51,6 +51,10 @@ public class Assignment11 extends Application {
 
     public static void main(String[] args) { launch(); }
 
+    // Caution: Circle object can't be a source object for MouseEvent
+    //          because (1) we can't add a circle from nothing
+    //          (2) we can't remove a source object.
+    //          (2) we can't remove a source object.
     public class CirclePane extends Pane {
         private static final double RADIUS = 10;
 
