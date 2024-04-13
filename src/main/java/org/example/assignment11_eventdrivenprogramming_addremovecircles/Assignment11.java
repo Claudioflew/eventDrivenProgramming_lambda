@@ -21,8 +21,8 @@ public class Assignment11 extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        // This lambda is possible because setOnMouseClicked() method already knows EventHandler<MouseEvent> object
-        // will be passed, and it is a functionality interface (only has one method handle(MouseEvent e))
+        // This lambda is possible because setOnMouseClicked() method already knows EventHandler<MouseEvent> object will be passed,
+        // and it is a functionality interface (only has one method handle(MouseEvent e))
         circlePane.setOnMouseClicked(e -> {
             double centerX = e.getX();
             double centerY = e.getY();
@@ -53,7 +53,6 @@ public class Assignment11 extends Application {
 
     // Caution: Circle object can't be a source object for MouseEvent
     //          because (1) we can't add a circle from nothing
-    //          (2) we can't remove a source object.
     //          (2) we can't remove a source object.
     public class CirclePane extends Pane {
         private static final double RADIUS = 10;
